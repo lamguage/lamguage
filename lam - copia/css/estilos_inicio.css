@@ -1,0 +1,1781 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+	background-color:#4f555e;
+	overflow-x: hidden;
+}
+
+
+/**apertura menu grande**/
+.para_barra {
+    width: 100%;
+    display: block;
+    flex-direction: column;
+}
+#header{
+    position: relative;
+    width: 100%;
+    display: block;
+    flex-direction: column;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 70px;
+    background: #815DD8;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9999;
+    border-bottom: 5px solid #ffffff;
+}
+.menu .logo-box{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.menu .logo-box h1 a{
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+    font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+}
+.menu .list-container{
+    margin-right: 20px;
+}
+.menu .list-container .lists{
+    display: flex;
+    margin-top: 20px;
+}
+.menu .list-container .lists li{
+    list-style: none;
+    padding: 6px;
+}
+.menu .list-container .lists li a{
+    text-decoration: none;
+    margin: 0px 6px;
+    padding: 8px;
+    color: white;
+    border-radius: 24px;
+    font-size: 22px;
+    font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+    
+}
+.menu .list-container .lists li a.active{
+    
+    color: white;
+    border: 3px solid white;
+}
+.morado:hover{
+    background: #574296;
+    color: white;
+    transition: 0.3s;
+}
+.inicio{
+    border: 5px solid white;
+    border-radius: 20px;
+}
+.inicio:hover{
+    border: 5px solid #574296;
+    transition: 0.3s;
+}
+.nav_bar {
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    position: fixed;
+    margin-top: 70px
+}
+.btnmenu > .fa-bars{
+    display: none;
+}
+/*cierre menu grande*/
+
+/*primera pagina apertura*/
+.text-fondo {
+    width: 100%;
+    height: 100vh;
+}
+.text-fondo .title{    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: url(../images/fondo_general.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.text-fondo .title .text{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.text-fondo .title .text h1{
+    color: white;
+    font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    font-weight: 20px;
+    margin-left: 80px;
+}
+.text-fondo  .title .text hr{
+    background: #574296;
+    width: 45%;
+    height: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.img_inicio {
+	width: 450px;
+	height: 250px;
+	margin: 50px 0px 0px 200px;
+	align-self: center;
+}
+/*primera pagina cierre*/
+/*lam apertura*/
+
+.Mision-y-vision{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+}
+.Mision-y-vision .info-container{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+.Mision-y-vision .info-container h1{
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 5px;
+    color: white;
+}
+.Mision-y-vision .info-container hr{
+    background: #815DD8;
+    border: none;
+    width: 80%;
+    height: 4px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.Mision-y-vision .info-container .galery{
+    width: 100%;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.Mision-y-vision .info-container .galery p{
+    font-family: arial;
+    font-size: 20px;
+    width: 550px;
+    margin-top: 10px;
+    bottom: 40px;
+    margin-left: 50px;
+    text-align: left;
+    color: #ffffff;
+    justify-content: center;
+}
+
+.mundo_correcto{
+    margin: 5px 50px;
+    height: 20%;
+    width: 20%;
+}
+
+/*lam cierre*/
+
+@media only screen and (max-width:900px){
+    .btnmenu > .fa-bars{
+       display: block;
+       position: absolute;
+       top: 20px;
+       right: 30px;
+       font-size: 28px;
+       cursor: pointer;
+       color: white;
+    }
+  
+    .menu .list-container{
+       position: absolute;
+       top: 70px;
+       left: -100%;
+       width: 100%;
+       height: 1080px;
+       background: #ffffff;
+    }
+    .menu .list-container .lists{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin-top: 30px;
+       
+    }
+    .menu .list-container .lists li{
+        width: 90%;
+        margin: 10px 0px;
+       
+        text-align: center;
+    }
+    .menu .list-container .lists li a{
+        background: none;
+        font-size: 30px;
+        color: black;
+        transition: 0.3s;
+    }
+    .menu .list-container .lists li a:hover{
+        background: none;
+        color: var(--purpleDark);
+    }
+  
+    .menu .list-container .lists li a.active{
+        background: none;
+        color: var(--whitePurple);
+        border: none;
+    }
+
+    .menu .list-container .lists li a.active:hover{
+        background: none;
+        color: var(--purpleDark);
+    }
+} 
+@media only screen and (min-width:900px) {
+
+body {
+	background-color:#4f555e;	
+	overflow-x: hidden;
+}
+
+
+
+
+/*primera pagina apertura*/
+.text-fondo {
+    width: 100%;
+    height: 100vh;
+}
+.text-fondo .title{    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: url(../images/fondo_general.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.text-fondo .title .text{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.text-fondo .title .text h1{
+    color: white;
+    font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    font-weight: 20px;
+    margin-left: 80px;
+}
+.text-fondo  .title .text hr{
+    background: #574296;
+    width: 45%;
+    height: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.img_inicio {
+	width: 450px;
+	height: 250px;
+	margin: 50px 0px 0px 200px;
+	align-self: center;
+}
+/*primera pagina cierre*/
+/*lam apertura*/
+
+.Mision-y-vision{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+}
+.Mision-y-vision .info-container{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+.Mision-y-vision .info-container h1{
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 5px;
+    color: white;
+}
+.Mision-y-vision .info-container hr{
+    background: #815DD8;
+    border: none;
+    width: 80%;
+    height: 4px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.Mision-y-vision .info-container .galery{
+    width: 100%;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.Mision-y-vision .info-container .galery p{
+    font-family: arial;
+    font-size: 20px;
+    width: 550px;
+    margin-top: 10px;
+    bottom: 40px;
+    margin-left: 50px;
+    text-align: left;
+    color: #ffffff;
+    justify-content: center;
+}
+
+.mundo_correcto{
+    margin: 5px 50px;
+    height: 20%;
+    width: 20%;
+}
+
+/*lam cierre*/
+/*como aprenderas apertura*/
+.Como-aprenderas{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.title2 h2{
+    color: white;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 50px;
+    justify-content: center;
+    display: flex;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.title2 hr{
+    background: #815DD8;
+    border: none;
+    width: 80%;
+    height: 4px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 5px;
+}
+.container-all {display: none;}
+
+.container-all1{
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+
+.container-all-sub1 {
+	width: 100%;
+	justify-content: center;
+    align-content: center;
+    align-self: center;
+    margin: auto; 
+}
+.images1_text1{
+	display: grid;
+	grid-template-columns: repeat(3, 300px); 
+	justify-content: center;
+    align-content: center;
+    align-self: center;
+     
+}
+.images1_text1 img{ 
+	width: 100px;
+	height: 100px;
+	margin-top: 40px;
+	justify-content: center;
+    align-content: center;
+    align-self: center;
+    margin: auto; 
+}
+.images1_text1 p{
+    color: white;
+    width: 70%;
+    font-family: arial;
+    font-size: 20px;
+	align-self: center; 
+	margin: auto; 
+	margin-bottom: 40px;
+	margin-top: 30px;
+}
+.images1_text2{
+	display: grid;
+	grid-template-columns: repeat(3, 300px); 
+	justify-content: center;
+    align-content: center;
+    align-self: center;
+    margin: auto; 
+}
+.images1_text2 img{
+	width: 100px;
+	height: 100px;
+	margin-top: 40px;
+	justify-content: center;
+    align-content: center;
+    align-self: center;
+    margin: auto; 
+}
+.images1_text2 p{
+    color: white;
+    width: 70%;
+    font-family: arial;
+    font-size: 20px;
+	align-self: center; 
+	margin: auto; 
+	margin-bottom: 60px;
+	margin-top: 30px;
+
+}
+/*como aprenderas cierre*/
+/*footer apertura*/
+.footer{
+    margin-top: 20px;
+    width: 100%;
+}
+.footer .footer-text{
+    position: relative;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background: #815DD8;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.footer .footer-text p{
+    font-size: 20px;
+    color: white;
+    font-family: arial;
+}
+
+/*footer cierre*/
+}
+@media only screen and (min-width:650px) and (max-width:900px) {
+
+    body {
+        background-color:#4f555e;	
+        overflow-x: hidden;
+    }
+    
+    
+    /**apertura menu grande**/
+  
+    
+    /*primera pagina apertura*/
+    .text-fondo {
+        width: 100%;
+        height: 100vh;
+    }
+    .text-fondo .title{    
+        width: 110%;
+        height: 100vh;
+        display: flex;
+        background: url(../images/fondo_general.png);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .text-fondo .title .text{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin: auto;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .text-fondo .title .text h1{
+        color: white;
+        font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+        font-size: 70px;
+        font-weight: 20px;
+        margin-left: 80px;
+    }
+    .text-fondo  .title .text hr{
+        background: #574296;
+        width: 45%;
+        height: 10px;
+        border: none;
+        border-radius: 10px;
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+    .img_inicio {
+        width: 450px;
+        height: 250px;
+        margin: 50px 0px 0px 200px;
+        align-self: center;
+    }
+    /*primera pagina cierre*/
+    /*lam apertura*/
+    
+    .Mision-y-vision{
+        width: 100%;
+        margin-top: 100px;
+        display: flex;
+    }
+    .Mision-y-vision .info-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+    }
+    .Mision-y-vision .info-container h1{
+        font-family: 'Arial Black', Gadget, sans-serif;
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 5px;
+        color: white;
+    }
+    .Mision-y-vision .info-container hr{
+        background: #815DD8;
+        border: none;
+        width: 80%;
+        height: 4px;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .Mision-y-vision .info-container .galery{
+        width: 100%;
+        bottom: 20px;
+        margin-left: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .Mision-y-vision .info-container .galery p{
+        font-family: arial;
+        font-size: 20px;
+        width: 80%;
+        margin-top: 10px;
+        bottom: 40px;
+        margin-left: 50px;
+        text-align: left;
+        color: #ffffff;
+        justify-content: center;
+    }
+    
+    .mundo_correcto{
+        margin: 5px 50px;
+        height: 30%;
+        width: 30%;
+    }
+    
+    /*lam cierre*/
+    /*como aprenderas apertura*/
+    .Como-aprenderas{
+        margin-top: 50px;
+        width: 100%;
+    }
+    
+    .title2 h2{
+        color: white;
+        font-family: 'Arial Black', Gadget, sans-serif;
+        font-size: 50px;
+        justify-content: center;
+        display: flex;
+        font-weight: normal;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .title2 hr{
+        background: #815DD8;
+        border: none;
+        width: 80%;
+        height: 4px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        border-radius: 5px;
+    }
+    .container-all {display: none;}
+    
+    .container-all1{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    
+    .container-all-sub1 {
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+        align-self: center;
+        margin: auto; 
+    }
+    .images1_text1{
+        display: grid;
+        grid-template-columns: repeat(3, auto); 
+        justify-content: center;
+        align-content: center;
+        align-self: center;
+        gap: 0;
+        margin-left: 40px;
+         
+    }
+    .images1_text1 img{ 
+        width: 100px;
+        height: 100px;
+        margin-top: 40px;
+        justify-content: center;
+        align-content: center;
+        align-self: center;
+        margin: auto; 
+    }
+    .images1_text1 p{
+        color: white;
+        width: 80%;
+        font-family: arial;
+        font-size: 20px;
+        align-self: center; 
+        margin: auto; 
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+    .images1_text2{
+        display: grid;
+        grid-template-columns: repeat(3, auto); 
+        justify-content: center;
+        align-content: center;
+        align-self: center;
+        gap: 0;
+        margin-left: 40px;
+    }
+    .images1_text2 img{
+        width: 100px;
+        height: 100px;
+        margin-top: 40px;
+        justify-content: center;
+        align-content: center;
+        align-self: center;
+        margin: auto; 
+    }
+    .images1_text2 p{
+        color: white;
+        width: 70%;
+        font-family: arial;
+        font-size: 20px;
+        align-self: center; 
+        margin: auto; 
+        margin-bottom: 60px;
+        margin-top: 30px;
+    
+    }
+    /*como aprenderas cierre*/
+    /*footer apertura*/
+    .footer{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .footer .footer-text{
+        position: relative;
+        bottom: 0;
+        top: 0;
+        width: 110%;
+        height: 40px;
+        background: #815DD8;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    .footer .footer-text p{
+        font-size: 30px;
+        color: white;
+        font-family: arial;
+    }
+    
+    /*footer cierre*/
+    } 
+@media only screen and (min-width:547px) and (max-width: 650px){
+
+        /**apertura menu grande**/
+       
+        /*primera pagina apertura*/
+        .text-fondo{
+            width: 220%;
+            height: 120vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .text-fondo .title{    
+            width: 100%;
+            height: 120vh;
+            display: flex;
+            background: url(../images/fondo_general.png);
+          
+        }
+        .text-fondo .title .text{
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            margin: auto;
+            margin-right: 30px;
+            align-content: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .text-fondo .title .text h1{
+            color: white;
+            font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+            font-size: 70px;
+            font-weight: 20px;
+            margin-top: 0%;
+            justify-content: center;
+            margin-right: 30px;
+            text-align: center;
+        }
+        .text-fondo .title .text hr{
+            background: #574296;
+            width: 80%;
+            height: 10px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 10px;
+            align-self: center;
+        }
+        .img_inicio {
+            width: 450px;
+            height: 250px;
+            margin: 5% 0% 0% 0%;
+            align-self: center;
+        }
+        /*primera pagina cierre*/
+        /*lam apertura*/
+        
+        .Mision-y-vision{
+            width: 100%;
+            margin-top: 100px;
+            display: block;
+        }
+        .Mision-y-vision .info-container{
+            width: 90%;
+            margin-left: 90px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        .Mision-y-vision .info-container h1{
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 70px;
+            margin-left: 550px ;
+            text-align: center;
+            margin-bottom: 5px;
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+        .Mision-y-vision .info-container hr{
+            background: #815DD8;
+            border: none;
+            width: 100%;
+            height: 10px;
+            margin-left: 280px;
+            
+            border-radius: 10px
+        }
+        .Mision-y-vision .info-container .galery{
+            width: 90%;
+            bottom: 20px;
+            width: 100%;
+            margin-left: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .Mision-y-vision .info-container .galery p{
+            font-family: arial;
+            font-size: 35px;
+            width: 160%;
+            margin-top: 10px;
+            margin-left: 20px;
+            bottom: 40px;
+          display: flex;
+          justify-content: center;
+            text-align: left;
+            color: #ffffff;
+           
+            
+            
+        }
+        .mundo_correcto{
+            height: 70%;
+            width: 70%;
+            align-self: center;
+       
+            justify-content: center;     
+            display: flex;
+            margin-left: 190px;
+            margin-top: 50px;
+        }
+        /*lam cierre*/
+        /*como aprenderas apertura*/
+        .Como-aprenderas{
+            margin-top: 50px;
+            width: 100%;
+            
+        }
+        .title2{
+            width: 100%;
+            margin-left: 100px ;
+            
+        }
+        .title2 h2{
+            color: white;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 70px;
+            justify-content: center;
+            display: flex;
+            width: 100%;
+            font-weight: normal;
+            text-align: center;
+            margin-bottom: 60px;
+            margin-left: 250px;
+        }
+        .title2 hr{
+            background: #815DD8;
+            border: none;
+            width: 100%;
+            height: 10px;
+            margin-left: 260px;
+            border-radius: 10px;
+        }
+      .container-all{
+          display: none;
+      }
+        .container-all1{
+            width: 100%;
+            
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+        .container-all-sub1 {
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-content: center;
+            align-self: center;
+            margin: auto; 
+        }
+        .images1_text1{
+            display: grid;
+            grid-template-columns: repeat(3, auto); 
+            justify-content: center;
+            align-content: center;
+            align-self: center;
+             width: 100%;
+             margin-left: 300px;
+            }
+        .images1_text1 img{ 
+            width: 300px;
+            height: 300px;
+            margin-top: 40px;
+            justify-content: center;
+            align-content: center;
+            align-self: center;
+            margin: auto; 
+            margin-left: 80px;
+        }
+        .images1_text1 p{
+            color: white;
+            width: 80%;
+            font-family: arial;
+            font-size: 35px;
+            align-self: center; 
+            
+            margin-left: 120px ;
+            margin-bottom: 60px;
+            margin-top: 30px;
+        }
+        .images1_text2{
+            display: grid;
+            grid-template-columns: repeat(3, auto); 
+            justify-content: center;
+            align-content: center;
+            align-self: center;
+            margin-left: 300px;
+            width: 100%;
+        }
+        .images1_text2 img{
+            width: 300px;
+            height: 300px;
+            margin-top: 40px;
+            justify-content: center;
+            align-content: center;
+            align-self: center;
+            margin: auto;
+             
+            margin-left: 80px; 
+        }
+        .images1_text2 p{
+            color: white;
+            width: 75%;
+            font-family: arial;
+            font-size: 35px;
+            align-self: center; 
+            
+            margin-left: 120px ;
+            margin-bottom: 60px;
+            margin-top: 30px;
+        }
+        /*como aprenderas cierre*/
+        /*footer apertura*/
+        .footer{
+           
+            width: 180%;
+          
+        
+        }
+        .footer .footer-text{
+            position: relative;
+            bottom: 0;
+            top: 0;
+            width: 120%;
+            height: 70px;
+            background-color: #815DD8;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+        .footer .footer-text p{
+            font-size: 35px;
+            color: white;
+            font-family: arial;
+        }
+        /*footer cierre*/
+        }
+@media only screen and (min-width:461px) and (max-width: 547px){
+
+      
+        /*primera pagina apertura*/
+        .text-fondo{
+            width: 180%;
+            height: 120vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .text-fondo .title{    
+            width: 100%;
+            height: 120vh;
+            display: flex;
+            background: url(../images/fondo_general.png);
+          
+        }
+        .text-fondo .title .text{
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            margin: auto;
+            margin-right: 30px;
+            align-content: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .text-fondo .title .text h1{
+            color: white;
+            font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            font-weight: 20px;
+            margin-top: 0%;
+            justify-content: center;
+            margin-right: 30px;
+            text-align: center;
+        }
+        .text-fondo .title .text hr{
+            background: #574296;
+            width: 80%;
+            height: 10px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 10px;
+            align-self: center;
+        }
+        .img_inicio {
+            width: 450px;
+            height: 250px;
+            margin: 5% 0% 0% 0%;
+            align-self: center;
+        }
+        /*primera pagina cierre*/
+        /*lam apertura*/
+        
+        .Mision-y-vision{
+            width: 100%;
+            margin-top: 100px;
+            display: block;
+        }
+        .Mision-y-vision .info-container{
+            width: 90%;
+            margin-left: 90px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        .Mision-y-vision .info-container h1{
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 60px;
+            margin-left: 280px ;
+            text-align: center;
+            margin-bottom: 5px;
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+        .Mision-y-vision .info-container hr{
+            background: #815DD8;
+            border: none;
+            width: 80%;
+            height: 10px;
+            margin-left: 170px;
+            
+            border-radius: 10px
+        }
+        .Mision-y-vision .info-container .galery{
+            width: 90%;
+            bottom: 20px;
+            
+            margin-left: 60px;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(1, auto);
+            
+        }
+        .Mision-y-vision .info-container .galery p{
+            font-family: arial;
+            font-size: 35px;
+            width: 150%;
+            margin-top: 10px;
+            margin-left: 0px;
+            bottom: 40px;
+          display: flex;
+          justify-content: center;
+            text-align: left;
+            color: #ffffff;
+           
+            
+            
+        }
+        .mundo_correcto{
+            height: 90%;
+            width: 90%;
+            align-self: center;
+       
+            justify-content: center;     
+            display: flex;
+            margin-left: 80px;
+            margin-top: 50px;
+        }
+        /*lam cierre*/
+        /*como aprenderas apertura*/
+        .Como-aprenderas{
+            margin-top: 50px;
+            width: 100%;
+            
+        }
+        .title2{
+            width: 100%;
+            margin-left: 100px ;
+            
+        }
+        .title2 h2{
+            color: white;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 60px;
+            justify-content: center;
+            display: flex;
+            width: 100%;
+            font-weight: normal;
+            text-align: center;
+            margin-bottom: 60px;
+            margin-left: 90px;
+        }
+        .title2 hr{
+            background: #815DD8;
+            border: none;
+            width: 100%;
+            height: 10px;
+            margin-left: 100px;
+            border-radius: 10px;
+        }
+        .container-all1{
+            display: none;
+        }
+        
+        .container-all{
+            width: 100%;
+            
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+        .container-all-sub {
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-content: center;
+            align-self: center;
+            margin: auto; 
+        }
+        .images_text1{
+            display: grid;
+            grid-template-columns: repeat(1, auto); 
+            justify-content: center;
+            align-content: center;
+            align-self: center;
+             
+            margin-left: 300px;
+        }
+        .images_text1 img{ 
+            width: 400px;
+            height: 400px;
+            margin-top: 40px;
+            justify-content: center;
+            align-content: center;
+            align-self: center;
+            margin: auto; 
+            margin-left: 80px;
+        }
+        .images_text1 p{
+            color: white;
+            width: 140%;
+            font-family: arial;
+            font-size: 35px;
+            align-self: center; 
+            margin: auto; 
+            margin-bottom: 60px;
+            margin-top: 30px;
+        }
+        .images_text2{
+            display: grid;
+            grid-template-columns: repeat(1, auto); 
+            justify-content: center;
+            align-content: center;
+            align-self: center;
+            margin-left: 300px;
+        }
+        .images_text2 img{
+            width: 400px;
+            height: 400px;
+            margin-top: 40px;
+            justify-content: center;
+            align-content: center;
+            align-self: center;
+            margin: auto; 
+            margin-left: 80px; 
+        }
+        .images_text2 p{
+            color: white;
+            width: 140%;
+            font-family: arial;
+            font-size: 35px;
+            align-self: center; 
+            margin: auto; 
+            margin-bottom: 60px;
+            margin-top: 30px;
+        }
+        /*como aprenderas cierre*/
+        /*footer apertura*/
+        .footer{
+           
+            width: 180%;
+          
+        
+        }
+        .footer .footer-text{
+            position: relative;
+            bottom: 0;
+            top: 0;
+            width: 100%;
+            height: 70px;
+            background-color: #815DD8;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+        .footer .footer-text p{
+            font-size: 35px;
+            color: white;
+            font-family: arial;
+        }
+        /*footer cierre*/
+        }
+@media only screen and (min-width:331px) and (max-width: 460px){
+
+    /**apertura menu grande**/
+    
+    /*primera pagina apertura*/
+    .text-fondo{
+        width: 180%;
+        height: 120vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-fondo .title{    
+        width: 100%;
+        height: 120vh;
+        display: flex;
+        background: url(../images/fondo_general.png);
+      
+    }
+    .text-fondo .title .text{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin: auto;
+        margin-right: 30px;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .text-fondo .title .text h1{
+        color: white;
+        font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        font-weight: 20px;
+        margin-top: 0%;
+        justify-content: center;
+        margin-right: 30px;
+        text-align: center;
+    }
+    .text-fondo .title .text hr{
+        background: #574296;
+        width: 80%;
+        height: 10px;
+        border: none;
+        border-radius: 10px;
+        margin-top: 10px;
+        align-self: center;
+    }
+    .img_inicio {
+        width: 450px;
+        height: 250px;
+        margin: 5% 0% 0% 0%;
+        align-self: center;
+    }
+    /*primera pagina cierre*/
+    /*lam apertura*/
+    
+    .Mision-y-vision{
+        width: 100%;
+        margin-top: 100px;
+        display: block;
+    }
+    .Mision-y-vision .info-container{
+        width: 90%;
+        margin-left: 90px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .Mision-y-vision .info-container h1{
+        font-family: 'Arial Black', Gadget, sans-serif;
+        font-size: 60px;
+        margin-left: 180px ;
+        text-align: center;
+        margin-bottom: 5px;
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+    .Mision-y-vision .info-container hr{
+        background: #815DD8;
+        border: none;
+        width: 90%;
+        height: 10px;
+        margin-left: 90px;
+        
+        border-radius: 10px
+    }
+    .Mision-y-vision .info-container .galery{
+        width: 90%;
+        bottom: 20px;
+        
+       
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1, auto);
+        
+    }
+    .Mision-y-vision .info-container .galery p{
+        font-family: arial;
+        font-size: 35px;
+        width: 400px;
+        margin-top: 10px;
+        margin-left: 180px;
+        bottom: 40px;
+      display: flex;
+      justify-content: center;
+        text-align: left;
+        color: #ffffff;
+       
+        
+        
+    }
+    .mundo_correcto{
+        height: 70%;
+        width: 70%;
+        align-self: center;
+        margin: auto;
+        justify-content: center;     
+        display: flex;
+        margin-top: 50px;
+    }
+    /*lam cierre*/
+    /*como aprenderas apertura*/
+    .Como-aprenderas{
+        margin-top: 50px;
+        width: 100%;
+        
+    }
+    .title2{
+        width: 100%;
+        margin-left: 100px ;
+        
+    }
+    .title2 h2{
+        color: white;
+        font-family: 'Arial Black', Gadget, sans-serif;
+        font-size: 60px;
+        justify-content: center;
+        display: flex;
+        font-weight: normal;
+        text-align: center;
+        margin-bottom: 60px;
+        margin-left: 130px;
+    }
+    .title2 hr{
+        background: #815DD8;
+        border: none;
+        width: 90%;
+        height: 10px;
+        margin-left: 90px;
+        border-radius: 10px;
+    }
+    .container-all1{
+        display: none;
+    }
+    
+    .container-all{
+        width: 100%;
+        
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .container-all-sub {
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+        align-self: center;
+        margin: auto; 
+    }
+    .images_text1{
+        display: grid;
+        grid-template-columns: repeat(1, auto); 
+        justify-content: center;
+        align-content: center;
+        align-self: center;
+         
+        margin-left: 300px;
+    }
+    .images_text1 img{ 
+        width: 400px;
+        height: 400px;
+        margin-top: 40px;
+        justify-content: center;
+        align-content: center;
+        align-self: center;
+        margin: auto; 
+    }
+    .images_text1 p{
+        color: white;
+        width: 70%;
+        font-family: arial;
+        font-size: 35px;
+        align-self: center; 
+        margin: auto; 
+        margin-bottom: 60px;
+        margin-top: 30px;
+    }
+    .images_text2{
+        display: grid;
+        grid-template-columns: repeat(1, auto); 
+        justify-content: center;
+        align-content: center;
+        align-self: center;
+        margin-left: 300px;
+    }
+    .images_text2 img{
+        width: 400px;
+        height: 400px;
+        margin-top: 40px;
+        justify-content: center;
+        align-content: center;
+        align-self: center;
+        margin: auto; 
+    }
+    .images_text2 p{
+        color: white;
+        width: 70%;
+        font-family: arial;
+        font-size: 35px;
+        align-self: center; 
+        margin: auto; 
+        margin-bottom: 60px;
+        margin-top: 30px;
+    }
+    /*como aprenderas cierre*/
+    /*footer apertura*/
+    .footer{
+       
+        width: 180%;
+      
+    
+    }
+    .footer .footer-text{
+        position: relative;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        height: 70px;
+        background-color: #815DD8;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    .footer .footer-text p{
+        font-size: 35px;
+        color: white;
+        font-family: arial;
+    }
+    /*footer cierre*/
+    }
+@media only screen and (min-width:240px) and (max-width: 330px){
+
+/**apertura menu grande**/
+
+/*cierre menu grande*/
+/*primera pagina apertura*/
+.text-fondo{
+    width: 180%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-fondo .title{    
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: url(../images/fondo_general.png);
+  
+}
+.text-fondo .title .text{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    margin-right: 30px;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.text-fondo .title .text h1{
+    color: white;
+    font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 20px;
+    margin-top: 0%;
+    justify-content: center;
+    margin-right: 30px;
+    text-align: center;
+}
+.text-fondo .title .text hr{
+    background: #574296;
+    width: 80%;
+    height: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    align-self: center;
+}
+.img_inicio {
+	width: 450px;
+	height: 250px;
+	margin: 5% 0% 0% 0%;
+	align-self: center;
+}
+/*primera pagina cierre*/
+/*lam apertura*/
+
+.Mision-y-vision{
+    width: 100%;
+    margin-top: 100px;
+    display: block;
+}
+.Mision-y-vision .info-container{
+    width: 90%;
+    margin-left: 90px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.Mision-y-vision .info-container h1{
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 60px;
+    margin-left: 20px ;
+    text-align: center;
+    margin-bottom: 5px;
+    color: white;
+}
+.Mision-y-vision .info-container hr{
+    background: #815DD8;
+    border: none;
+    width: 90%;
+    height: 10px;
+    margin-left: 20px;
+    
+    border-radius: 10px
+}
+.Mision-y-vision .info-container .galery{
+    width: 90%;
+    bottom: 20px;
+    
+   
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1, auto);
+    
+}
+.Mision-y-vision .info-container .galery p{
+    font-family: arial;
+    font-size: 35px;
+    width: 400px;
+    margin-top: 10px;
+    bottom: 40px;
+  display: flex;
+  justify-content: center;
+    text-align: left;
+    color: #ffffff;
+   
+    
+    
+}
+.mundo_correcto{
+    height: 70%;
+    width: 70%;
+    align-self: center;
+    margin: auto;
+    justify-content: center;     
+    display: flex;
+    margin-top: 50px;
+}
+/*lam cierre*/
+/*como aprenderas apertura*/
+.Como-aprenderas{
+    margin-top: 50px;
+    width: 100%;
+    
+}
+.title2{
+    width: 100%;
+    margin-left: 100px ;
+    
+}
+.title2 h2{
+    color: white;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 60px;
+    justify-content: center;
+    display: flex;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-left: 20px;
+}
+.title2 hr{
+    background: #815DD8;
+    border: none;
+    width: 90%;
+    height: 10px;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+.container-all1{
+	display: none;
+}
+
+.container-all{
+	width: 100%;
+    
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+.container-all-sub {
+    height: 100%;
+	width: 100%;
+	justify-content: center;
+    align-content: center;
+    align-self: center;
+    margin: auto; 
+}
+.images_text1{
+	display: grid;
+	grid-template-columns: repeat(1, auto); 
+	justify-content: center;
+    align-content: center;
+    align-self: center;
+     
+    margin-left: 200px;
+}
+.images_text1 img{ 
+	width: 350px;
+	height: 350px;
+	margin-top: 40px;
+	justify-content: center;
+    align-content: center;
+    align-self: center;
+    margin: auto; 
+}
+.images_text1 p{
+    color: white;
+ 
+    font-family: arial;
+    font-size: 35px;
+	align-self: center; 
+	margin: auto; 
+	margin-bottom: 60px;
+	margin-top: 30px;
+}
+.images_text2{
+	display: grid;
+	grid-template-columns: repeat(1, auto); 
+	justify-content: center;
+    align-content: center;
+    align-self: center;
+    margin-left: 200px;
+}
+.images_text2 img{
+	width: 350px;
+	height: 350px;
+	margin-top: 40px;
+	justify-content: center;
+    align-content: center;
+    align-self: center;
+    margin: auto; 
+}
+.images_text2 p{
+    color: white;
+  
+    font-family: arial;
+    font-size: 35px;
+	align-self: center; 
+	margin: auto; 
+	margin-bottom: 60px;
+	margin-top: 30px;
+}
+/*como aprenderas cierre*/
+/*footer apertura*/
+.footer{
+   
+    width: 180%;
+  
+
+}
+.footer .footer-text{
+    position: relative;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #815DD8;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.footer .footer-text p{
+    font-size: 30px;
+    color: white;
+    font-family: arial;
+}
+/*footer cierre*/
+}
+
+   

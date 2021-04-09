@@ -1,0 +1,467 @@
+:root{
+    --purpleDark:#7030a0;
+    --white:#ffffff;
+    --whitePurple:#bc8fdd;
+    --negro:#000000;
+    --gray: #373C44;
+    --oceanBlue:#202933;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: url(../images/fondo_general.png);
+    height: 100vh;
+    
+}
+
+
+/**nav menu**/
+.para_barra {
+    width: 100%;
+    display: block;
+    flex-direction: column;
+}
+#header{
+    position: relative;
+    width: 100%;
+    display: block;
+    flex-direction: column;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 70px;
+    background: #815DD8;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9999;
+    border-bottom: 5px solid var(--white);
+}
+.menu .logo-box{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.menu .logo-box h1 a{
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+    font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+}
+.menu .list-container{
+    margin-right: 20px;
+}
+.menu .list-container .lists{
+    display: flex;
+    margin-top: 20px;
+}
+.menu .list-container .lists li{
+    list-style: none;
+    padding: 6px;
+}
+.menu .list-container .lists li a{
+    text-decoration: none;
+    margin: 0px 6px;
+    padding: 8px;
+    color: white;
+    border-radius: 24px;
+    font-size: 22px;
+    font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+    
+}
+.menu .list-container .lists li a.active{
+    
+    color: white;
+    border: 3px solid white;
+}
+.morado:hover{
+    background: #574296;
+    color: white;
+    transition: 0.3s;
+}
+.btnmenu > .fa-bars{
+    display: none;
+}
+.modalidad {
+    border: 5px solid white;
+    border-radius: 20px;
+}
+.modalidad:hover{
+    border: 5px solid #574296;
+    transition: 0.3s;
+}
+.nav_bar {
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    position: fixed;
+    margin-top: 50px
+}
+
+
+
+/**footer**/
+
+.footer{
+    margin-top: 20px;
+    width: 100%;
+    bottom: 0px;
+}
+.footer .footer-text{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: #202933;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.footer .footer-text p{
+    font-size: 20px;
+    color: white;
+    font-family: arial;
+}
+
+
+
+/*precios*/
+
+.precios_general {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    margin-top: 100px;
+}
+.title_precios .text_precios h1{
+    color: white;
+    font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 20px;
+    text-align: left;
+    margin-left: 65px;
+    margin-top: 40px;
+}
+.title_precios .text_precios hr{
+    background: #574296;
+    width: 40%;
+    height: 5px;
+    border: none;
+    align-self: left;
+    margin-left: 50px;
+}
+.pago {    
+    color: white;
+    font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 20px;
+    text-align: left;
+    margin-left: 5%;
+}
+.razon {    
+    color: white;
+    font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 20px;
+    text-align: left;
+    margin-left: 5%;
+}
+.parrafo1 {
+    padding: 20px;
+    width: 80%;
+    border: 5px solid white;
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-top: 30px;
+}
+
+.telegram {
+    width: 317px;
+    height: 327px;
+    margin-top: 80px;
+    margin-right: 200px;
+}
+
+/**media query**/
+/*no tocar*/
+@media only screen and (max-width:900px){
+    .btnmenu > .fa-bars{
+       display: block;
+       position: absolute;
+       top: 20px;
+       right: 30px;
+       font-size: 28px;
+       cursor: pointer;
+       color: white;
+    }
+  
+    .menu .list-container{
+       position: absolute;
+       top: 70px;
+       left: -100%;
+       width: 100%;
+       height: 1080px;
+       background: #ffffff;
+    }
+    .menu .list-container .lists{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin-top: 30px;
+       
+    }
+    .menu .list-container .lists li{
+        width: 90%;
+        margin: 10px 0px;
+       
+        text-align: center;
+    }
+    .menu .list-container .lists li a{
+        background: none;
+        font-size: 30px;
+        color: black;
+        transition: 0.3s;
+    }
+    .menu .list-container .lists li a:hover{
+        background: none;
+        color: var(--purpleDark);
+    }
+  
+    .menu .list-container .lists li a.active{
+        background: none;
+        color: var(--whitePurple);
+        border: none;
+    }
+
+    .menu .list-container .lists li a.active:hover{
+        background: none;
+        color: var(--purpleDark);
+    }
+}  
+/*no tocar*/
+@media only screen and (min-width:240px) and ( max-width:500px) {
+    .modalidad {
+        border: 5px solid white;
+        border-radius: 20px;
+    }
+    .modalidad:hover{
+        border: 5px solid #574296;
+        transition: 0.3s;
+    }
+    .nav_bar {
+        width: 100%;
+        height: 5px;
+        background-color: white;
+        position: fixed;
+        margin-top: 50px
+    }
+    
+    
+    
+    /**footer**/
+    
+    .footer{
+     position: fixed;
+       
+        width: 90%;
+        
+    }
+    .footer .footer-text{
+        position: absolute;
+        bottom: 0;
+        width: 120%;
+        height: 40px;
+        background: #202933;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    .footer .footer-text p{
+        font-size: 20px;
+        color: white;
+        font-family: arial;
+    }
+    
+    
+    
+    /*precios*/
+    
+    .precios_general {
+        display: flex;
+        width: 100%;
+        
+        margin-top: 100px;
+    }
+    .title_precios .text_precios h1{
+        color: white;
+        font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        font-weight: 20px;
+       
+        margin-left: 75px;
+        margin-top: 40px;
+    }
+    .title_precios .text_precios hr{
+        background: #574296;
+        width: 85%;
+        height: 5px;
+        border: none;
+        align-self: left;
+        margin-left: 70px;
+    }
+    .razon{
+        font-size: 25px;
+    }
+    
+    .parrafo1 {
+
+        padding: 5px;
+        width: 100%;
+        height: 300px;
+        justify-content: center;
+        display: flex;
+        border: 5px solid white;
+        border-radius: 20px;
+        margin-left: 30px;
+        margin-top: 30px;
+        align-items: center;
+    }
+    .telegram-logo{
+        margin-top: 370px;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+    align-items: center;
+       
+       
+    }
+    .telegram {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 317px;
+        height: 327px;
+        margin-right: 300px;
+        margin-left: 0px;
+        margin-top: 80px;
+       margin-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width:500px) and ( max-width:800px) {
+    .modalidad {
+        border: 5px solid white;
+        border-radius: 20px;
+    }
+    .modalidad:hover{
+        border: 5px solid #574296;
+        transition: 0.3s;
+    }
+    .nav_bar {
+        width: 100%;
+        height: 5px;
+        background-color: white;
+        position: fixed;
+        margin-top: 50px
+    }
+    
+    
+    
+    /**footer**/
+    
+    .footer{
+     position: fixed;
+       
+        width: 90%;
+        
+    }
+    .footer .footer-text{
+        position: absolute;
+        bottom: 0;
+        width: 120%;
+        height: 40px;
+        background: #202933;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    .footer .footer-text p{
+        font-size: 20px;
+        color: white;
+        font-family: arial;
+    }
+    
+    
+    
+    /*precios*/
+    
+    .precios_general {
+        display: flex;
+        width: 100%;
+        
+        margin-top: 100px;
+    }
+    .title_precios .text_precios h1{
+        color: white;
+        font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        font-weight: 20px;
+       
+        margin-left: 75px;
+        margin-top: 40px;
+    }
+    .title_precios .text_precios hr{
+        background: #574296;
+        width: 70%;
+        height: 5px;
+        border: none;
+        align-self: left;
+        margin-left: 70px;
+    }
+    .razon{
+        font-size: 25px;
+    }
+    
+    .parrafo1 {
+
+        padding: 5px;
+        width: 100%;
+        height: 300px;
+        justify-content: center;
+        display: flex;
+        border: 5px solid white;
+        border-radius: 20px;
+        margin-left: 30px;
+        margin-top: 30px;
+        align-items: center;
+    }
+    .telegram-logo{
+        margin-top: 370px;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+    align-items: center;
+       
+       
+    }
+    .telegram {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 317px;
+        height: 327px;
+        margin-right: 700px;
+        margin-left: 0px;
+        margin-top: 80px;
+       margin-bottom: 50px;
+    }
+}
+

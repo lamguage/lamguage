@@ -1,0 +1,525 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: url(../images/fondo_general.png);
+    background-size: 100%;
+    overflow-x: hidden;
+}
+
+
+/**nav menu**/
+.para_barra {
+    width: 100%;
+    display: block;
+    flex-direction: column;
+}
+#header{
+    position: relative;
+    width: 100%;
+    display: block;
+    flex-direction: column;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 83px;
+    background: #815DD8;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9999;
+    border-bottom: 5px solid white;
+}
+.menu .logo-box{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.menu .logo-box h1 a{
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+    font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+}
+.menu .list-container{
+    margin-right: 20px;
+}
+.menu .list-container .lists{
+    display: flex;
+    margin-top: 20px;
+}
+.menu .list-container .lists li{
+    list-style: none;
+    padding: 6px;
+}
+.menu .list-container .lists li a{
+    text-decoration: none;
+    margin: 0px 6px;
+    padding: 8px;
+    color: white;
+    border-radius: 24px;
+    font-size: 22px;
+    font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+    
+}
+.menu .list-container .lists li a.active{
+    
+    color: white;
+    border: 3px solid white;
+}
+.morado:hover{
+    background: #574296;
+    color: white;
+    transition: 0.3s;
+}
+.precios {
+    border: 5px solid white;
+    border-radius: 20px;
+}
+.precios:hover{
+    border: 5px solid #574296;
+    transition: 0.3s;
+}
+.nav_bar {
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    position: fixed;
+    margin-top: 50px
+}
+
+.btnmenu > .fa-bars{
+    display: none;
+}
+
+/**footer**/
+
+.footer{
+    margin-top: 20px;
+    width: 100%;
+    bottom: 0px;
+}
+.footer .footer-text{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: #202933;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.footer .footer-text p{
+    font-size: 20px;
+    color: white;
+    font-family: arial;
+}
+
+
+
+/*precios*/
+
+.precios_general {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    margin-top: 40px;
+}
+.title_precios .text_precios h1{
+    color: white;
+    font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 20px;
+    text-align: left;
+    margin-left: 65px;
+    margin-top: 40px;
+}
+.title_precios .text_precios hr{
+    background: #574296;
+    width: 40%;
+    height: 5px;
+    border: none;
+    align-self: left;
+    margin-left: 50px;
+}
+.pago {    
+    color: white;
+    font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 20px;
+    text-align: left;
+    margin-left: 5%;
+}
+.razon {    
+    color: white;
+    font-family:Arial Rounded MT Bold,  Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 20px;
+    text-align: left;
+    margin-left: 5%;
+}
+.parrafo1 {
+    padding: 20px;
+    width: 80%;
+    border: 5px solid white;
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-top: 30px;
+}
+
+.diez {
+    width: 517px;
+    height: 327px;
+    margin-top: 130px;
+    margin-right: 100px;
+    
+}
+
+
+/**media query**/
+@media only screen and (max-width:900px){
+    .btnmenu > .fa-bars{
+       display: block;
+       position: absolute;
+       top: 20px;
+       right: 30px;
+       font-size: 28px;
+       cursor: pointer;
+       color: white;
+    }
+  
+    .menu .list-container{
+       position: absolute;
+       top: 70px;
+       left: -100%;
+       width: 100%;
+       height: 1080px;
+       background: #ffffff;
+    }
+    .menu .list-container .lists{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin-top: 30px;
+       
+    }
+    .menu .list-container .lists li{
+        width: 90%;
+        margin: 10px 0px;
+       
+        text-align: center;
+    }
+    .menu .list-container .lists li a{
+        background: none;
+        font-size: 30px;
+        color: black;
+        transition: 0.3s;
+    }
+    .menu .list-container .lists li a:hover{
+        background: none;
+        color: var(--purpleDark);
+    }
+  
+    .menu .list-container .lists li a.active{
+        background: none;
+        color: var(--whitePurple);
+        border: none;
+    }
+
+    .menu .list-container .lists li a.active:hover{
+        background: none;
+        color: var(--purpleDark);
+    }
+} 
+@media only screen and (min-width:240px) and ( max-width:500px) {
+   /**footer**/
+
+.footer{
+    position: fixed;
+    width: 100%;
+    justify-content: end;
+}
+.footer .footer-text{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: #202933;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.footer .footer-text p{
+    font-size: 20px;
+    color: white;
+    font-family: arial;
+}
+
+
+
+/*precios*/
+
+.precios_general {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    margin-top: 40px;
+}
+.title_precios .text_precios h1{
+    color: white;
+    font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 20px;
+    text-align: left;
+    margin-left: 85px;
+    margin-top: 50px;
+}
+.title_precios .text_precios hr{
+    background: #574296;
+    width: 90%;
+    height: 5px;
+    border: none;
+    align-self: left;
+    margin-left: 50px;
+}
+.pago {    
+    color: white;
+    font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 20px;
+    text-align: left;
+    margin-left: 5%;
+}
+.razon {    
+    color: white;
+    font-family:Arial Rounded MT Bold,  Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 20px;
+    text-align: left;
+    margin-left: 5%;
+}
+.parrafo1 {
+    
+    
+    
+    padding: 20px;
+    width: 120%;
+    border: 5px solid white;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.number10{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 400px;
+    width: 20%;
+    height: 20%;
+}
+.diez {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 317px;
+    height: 227px;
+    margin-top: 150px;
+    margin-left: 0px;
+    margin-right: 210px;
+   
+    
+}
+
+}
+
+@media only screen and (min-width:500px) and ( max-width:900px) {
+    .footer{
+        position: fixed;
+        width: 100%;
+        justify-content: end;
+    }
+    .footer .footer-text{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        background: #202933;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    .footer .footer-text p{
+        font-size: 20px;
+        color: white;
+        font-family: arial;
+    }
+    
+    
+    
+    /*precios*/
+    
+    .precios_general {
+        display: flex;
+        width: 100%;
+        position: absolute;
+        margin-top: 40px;
+    }
+    .title_precios .text_precios h1{
+        color: white;
+        font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        font-weight: 20px;
+        text-align: center;
+        margin-left: 105px;
+        margin-top: 50px;
+    }
+    .title_precios .text_precios hr{
+        background: #574296;
+        width: 60%;
+        height: 5px;
+        border: none;
+        align-self: left;
+        margin-left: 170px;
+    }
+    .pago {    
+        color: white;
+        font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: 20px;
+        text-align: left;
+        margin-left: 5%;
+    }
+    .razon {    
+        color: white;
+        font-family:Arial Rounded MT Bold,  Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: 20px;
+        text-align: left;
+        margin-left: 5%;
+    }
+    .parrafo1 {
+        
+        
+        
+        padding: 20px;
+        width: 120%;
+        border: 5px solid white;
+        border-radius: 20px;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .number10{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 300px;
+        width: 20%;
+        height: 20%;
+    }
+    .diez {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 317px;
+        height: 227px;
+        margin-top: 150px;
+        margin-left: 0px;
+        margin-right: 510px;
+       
+        
+    }
+    
+    
+}
+
+@media only screen and (min-width:900px) and ( max-width:1000px) {
+    
+    .footer{
+        margin-top: 20px;
+        width: 100%;
+        bottom: 0px;
+    }
+    .footer .footer-text{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        background: #202933;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    .footer .footer-text p{
+        font-size: 20px;
+        color: white;
+        font-family: arial;
+    }
+    
+    
+    
+    /*precios*/
+    
+    .precios_general {
+        display: flex;
+        width: 100%;
+        position: absolute;
+        margin-top: 40px;
+    }
+    .title_precios .text_precios h1{
+        color: white;
+        font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        font-weight: 20px;
+        text-align: left;
+        margin-left: 65px;
+        margin-top: 40px;
+    }
+    .title_precios .text_precios hr{
+        background: #574296;
+        width: 40%;
+        height: 5px;
+        border: none;
+        align-self: left;
+        margin-left: 50px;
+    }
+    .pago {    
+        color: white;
+        font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: 20px;
+        text-align: left;
+        margin-left: 5%;
+    }
+    .razon {    
+        color: white;
+        font-family:Arial Rounded MT Bold,  Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: 20px;
+        text-align: left;
+        margin-left: 5%;
+    }
+    .parrafo1 {
+        padding: 20px;
+        width: 80%;
+        border: 5px solid white;
+        border-radius: 20px;
+        margin-left: 5%;
+        margin-top: 30px;
+    }
+    
+    .diez {
+        width: 317px;
+        height: 227px;
+        margin-top: 130px;
+        margin-right: 100px;
+        
+    }
+    
+}
